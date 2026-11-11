@@ -4,3 +4,4 @@ We need to design a MIPS program that makes a Fibonacci function and then a func
 Arturo Lopez - Alope333@uic.edu  
 Christopher Leon - cleon35@uic.edu  
 Ronald Li - rli61@uic.edu  
+Lucas DiGuido - ldigu@uic.edu
