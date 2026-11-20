@@ -3,7 +3,7 @@
 
 .data 
 	output: 	.word 0
-	n: 		.word 7 
+	n: 		.word 2 
 	resulting_msg:	.asciiz "Result: "
 	
 .text 
@@ -28,15 +28,17 @@ sw $v0, 0($t6)
 move $t0, $v0
 
 
+li $v0,4 
+la $a0, resulting_msg 
+syscall 
 
-li $v0, 4
-la $a0, resulting_msg
-
-syscall  
- 
 li $v0, 1
+move $a0, $t0 
+syscall 
 
+li $v0, 10
 syscall
+
 
 
 
